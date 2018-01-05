@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="toHTML:jar">
+    <output-path>$USER_HOME$/Desktop/Schule/mpsgen/</output-path>
+    <root id="archive" name="toHTML.jar">
+      <element id="module-output" name="toHTML" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/pr/PDFxStream.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
