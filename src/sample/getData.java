@@ -60,18 +60,17 @@ public class getData {
     public static String toTable(ArrayList<ArrayList<String>> j, Boolean black){
         String h=new String();
         h+="<html>";
-        h+="<body>";
-        h+="<table>";
+        h+="\n<body>";
+        h+="\n<table>";
         for(ArrayList<String> p:j){
-            h+="<tr>";
+            h+="\n<tr>";
             for(String w:p){
-                h+="<td>"+w+"</td>";
+                h+="\n<td>"+w+"</td>";
             }
             h+="</tr>";
         }
         h+="</table>";
         h+="</body>";
-        h+="</html>";
 
         if(black){
             h+="<style>\n" +
@@ -86,6 +85,8 @@ public class getData {
                     "    }\n" +
                     "</style>";
         }
+        h+="\n</html>";
+
         return h;
     }
 
@@ -101,9 +102,21 @@ public class getData {
                 for(int k=4; k<lines[i].length(); k++){
                     if(lines[i].substring(k-4,k).equals("    ")) {
                         platz.add(k);
+
                     }
                 }
-                temp.add(lines[i].substring(platz.get(5), platz.get(6)-4));
+                System.out.println(platz.size());
+                if(platz.size()>6) {
+                    temp.add(lines[i].substring(platz.get(5), platz.get(6) - 4));
+                }
+
+                else if(platz.size()>3){
+                    temp.add(lines[i].substring(platz.get(2)+1, platz.get(2)+5)+lines[i].substring(platz.get(5), lines[i].length()-2));
+                }
+
+                else {
+                    temp.add(lines[i].substring(platz.get(2), lines[i].length()-2));
+                }
 
                 e.add(temp);
 
@@ -116,4 +129,6 @@ public class getData {
 
 }
 
+// C:/Users/leona/Desktop/Schule/mpsgen/arbeiten.pdf
+// C:/Users/leona/Desktop/Schule/mpsgen/
 

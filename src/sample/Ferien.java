@@ -37,7 +37,7 @@ public class Ferien {
         int i = htmldoc.indexOf("<table>");
         while(i >= 0) {
             tab=htmldoc.substring(i, htmldoc.indexOf("</table>", i)+8) + "<br /><br /><br /><br /><br />";
-            erg+=this.addyear(tab);
+            erg+= "\n" + this.addyear(tab);
             i = htmldoc.indexOf("<table>", i+1);
         }
         erg+="</body><br /><br /><br /></html>";
