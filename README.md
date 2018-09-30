@@ -1,7 +1,7 @@
 # toHTML
 Generator for all mpsPlans files.
 
-Because of the difficulties to parse a PDF in a way that allows us to properly process the data afterward we wrote this small application.
+Because of the difficulties to parse a PDF on Android in a way that allows us to properly process the data we wrote this small application.
 The information is extracted via PDFxStream (not running on Android / smartphone chipset). 
 
 1. Download & execute the jar
