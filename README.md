@@ -1,7 +1,6 @@
 # toHTML
 Diese App generiert alle zusätzlichen für mpsPlans benötigten Dateien.
 
-Because of the difficulties to parse a PDF on Android in a way that allows us to properly process the data we wrote this small application.
 Wegen der Schwierigkeit, eine PDF-Datei unter Android so zu parsen, dass wir sie gut weiterverarbeiten können, haben wir diese App geschrieben.
 Die Informationen werden via PDFxStream extrahiert (läuft nicht unter Android / auf einem Smartphone Chipsatz).
 
